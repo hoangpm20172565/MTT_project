@@ -1,0 +1,8 @@
+<include>
+    <extension name="prosbc_outbound">
+        <!-- Detect 8 digits SIP number and send it to sip2sip gateway -->
+        <condition field="destination_number" expression="(\d{8})$">
+            <action application="bridge" data="sofia/gateway/sip2sip/$1"/>
+        </condition>
+    </extension>
+</include>

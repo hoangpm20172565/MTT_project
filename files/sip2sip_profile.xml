@@ -1,0 +1,8 @@
+<include>
+	<gateway name="sip2sip">
+		<param name="realm" value="sip2sip.info"/>
+		<param name="username" value="20172565"/>
+		<param name="password" value="482560"/>
+		<param name="register" value="true"/>
+	</gateway>
+</include>

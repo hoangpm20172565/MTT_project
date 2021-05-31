@@ -1,0 +1,9 @@
+<include>
+    <extension name="sip2sip_did">
+        <!-- the DID is 20172565 -->
+        <condition field="destination_number" expression="^(20172565)$">
+            <action application="set" data="domain_name=$${domain}"/>
+            <action application="transfer" data="1002 XML default"/>
+        </condition>
+    </extension>
+</include>
